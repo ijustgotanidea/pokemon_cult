@@ -78,15 +78,18 @@ const EmblaCarousel = ({ slides, options }: PropType) => {
 	}, [emblaApi, tweenParallax]);
 
 	return (
-		<div className='max-w-6xl mx-auto [--slide-height:32rem] [--slide-spacing:1.5rem] [--slide-size:90%]'>
+		<div className='max-w-full md:max-w-6xl mx-auto [--slide-height:20rem] md:[--slide-height:28rem] [--slide-spacing:1rem] md:[--slide-spacing:1.5rem] [--slide-size:85%] md:[--slide-size:90%]'>
 			<div className='overflow-hidden' ref={emblaRef}>
-				<div className='flex touch-pan-y touch-pinch-zoom -ml-6'>
+				<div className='flex touch-pan-y touch-pinch-zoom -ml-4 md:-ml-6'>
 					{slides.map(slide => (
-						<div className='transform translate3d-0 flex-[0_0_90%] min-w-0 pl-6' key={slide.id}>
-							<div className='rounded-3xl h-full overflow-hidden shadow-sm bg-white/10 backdrop-blur-sm pb-2'>
-								<div className='embla__parallax__layer relative h-[28rem] w-full flex justify-center'>
+						<div
+							className='transform translate3d-0 flex-[0_0_85%] md:flex-[0_0_90%] min-w-0 pl-4 md:pl-6'
+							key={slide.id}
+						>
+							<div className='rounded-2xl md:rounded-3xl h-full overflow-hidden shadow-sm bg-white/10 backdrop-blur-sm pb-2'>
+								<div className='embla__parallax__layer relative h-[16rem] sm:h-[20rem] md:h-[28rem] w-full flex justify-center'>
 									<Image
-										className='rounded-t-3xl block h-[28rem] w-full object-cover object-center max-w-none flex-[0_0_calc(115%+3rem)]'
+										className='rounded-t-2xl md:rounded-t-3xl block h-full w-full object-cover object-center max-w-none flex-[0_0_calc(115%+3rem)]'
 										src={slide.src}
 										alt={slide.description || 'Carousel image'}
 										width={1200}
@@ -95,8 +98,8 @@ const EmblaCarousel = ({ slides, options }: PropType) => {
 									/>
 								</div>
 								{slide.description && (
-									<div className='p-4 text-center'>
-										<p className='text-white text-sm font-medium leading-relaxed'>
+									<div className='p-2 md:p-4 text-center'>
+										<p className='text-white text-xs md:text-sm font-medium leading-relaxed'>
 											{slide.description}
 										</p>
 									</div>

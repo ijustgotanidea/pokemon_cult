@@ -21,6 +21,7 @@ const pokeFont = localFont({
 export const metadata: Metadata = {
 	title: 'Buy $POKECULT - Battle & Trade',
 	description: 'By @caiooncrypto',
+	viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({

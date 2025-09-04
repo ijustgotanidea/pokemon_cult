@@ -42,23 +42,24 @@ export default function AudioPlayer({ audioSrc }: AudioPlayerProps) {
 
 	return (
 		<motion.div
-			className={`fixed bottom-4 right-4 z-50 backdrop-blur-sm rounded-full shadow-md ${
+			className={`fixed bottom-2 md:bottom-4 right-2 md:right-4 z-50 backdrop-blur-sm rounded-full shadow-md ${
 				isVisible ? 'bg-black/30' : 'bg-violet-900/50'
 			}`}
 			animate={{
-				width: isVisible ? 160 : 50,
-				height: isVisible ? 48 : 40,
-				borderRadius: 24,
+				width: isVisible ? 140 : 40,
+				height: isVisible ? 40 : 36,
+				borderRadius: 20,
 			}}
 			transition={{ duration: 0.2 }}
-			initial={{ width: 40, height: 40 }}
+			initial={{ width: 36, height: 36 }}
 		>
 			<audio ref={audioRef} src={audioSrc} loop />
 
 			<div className='flex items-center h-full w-full px-2'>
 				<button
 					onClick={togglePlay}
-					className='rounded-full w-8 h-8 flex items-center justify-center text-white hover:text-violet-200 transition-colors'
+					className='rounded-full w-7 h-7 flex items-center justify-center text-white hover:text-violet-200 transition-colors'
+					aria-label={isPlaying ? 'Pause' : 'Play'}
 				>
 					{isPlaying ? (
 						<svg

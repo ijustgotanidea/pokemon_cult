@@ -80,22 +80,32 @@ export default function Home() {
 
 	return (
 		<motion.div
-			className='font-sans flex flex-col items-center justify-items-center min-h-screen gap-16'
+			className='font-sans flex flex-col items-center justify-items-center min-h-screen gap-8 md:gap-12 lg:gap-16 overflow-x-hidden'
 			variants={containerVariants}
 			initial='hidden'
 			animate='visible'
 		>
-			<motion.header className='text-center p-8' variants={itemVariants}>
-				<Image src='/pokecult-logo.png' alt='$POKECULT' width={800} height={800} />
+			<motion.header className='text-center p-4 md:p-8' variants={itemVariants}>
+				<Image
+					src='/pokecult-logo.png'
+					alt='$POKECULT'
+					width={800}
+					height={800}
+					className='w-full max-w-[300px] md:max-w-[500px] lg:max-w-[800px] mx-auto'
+					priority
+				/>
 				<p className='font-bold text-white'>CA: Coming soon!</p>
 			</motion.header>
 			<motion.main className='w-full flex-1' variants={itemVariants}>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-36'>
-					<motion.section className='flex flex-col gap-1 max-w-96' variants={itemVariants}>
-						<h2 className='text-6xl font-bold text-white w-full flex mb-4'>
+				<div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4 sm:px-6 md:px-12 lg:px-24'>
+					<motion.section
+						className='flex flex-col gap-1 max-w-full md:max-w-96'
+						variants={itemVariants}
+					>
+						<h2 className='text-3xl md:text-4xl lg:text-6xl font-bold text-white w-full flex flex-wrap mb-4'>
 							$Pokecult is a token to represent the community love for pokemon.
 						</h2>
-						<h4>
+						<h4 className='text-sm md:text-base'>
 							Fees will be repurchased on the chart, in addition to a boost payment in the dex.
 						</h4>
 					</motion.section>
@@ -105,26 +115,28 @@ export default function Home() {
 					</motion.div>
 
 					<motion.section
-						className='p-6 flex flex-col gap-4 justify-center items-center'
+						className='p-4 md:p-6 flex flex-col gap-3 md:gap-4 justify-center items-center'
 						variants={itemVariants}
 					>
-						<div className='flex flex-row gap-4 justify-center items-center'>
+						<div className='flex flex-row gap-3 md:gap-4 justify-center items-center'>
 							<a
-								className='text-xl font-bold text-white mb-4 rounded-full p-2 bg-white border border-black border-r-3 border-b-3'
+								className='text-xl font-bold text-white mb-2 md:mb-4 rounded-full p-2 bg-white border border-black border-r-2 md:border-r-3 border-b-2 md:border-b-3'
 								href='https://x.com/i/communities/1958130076949619185'
 								target='_blank'
+								aria-label='Twitter Community'
 							>
-								<FaXTwitter className='text-black h-9 w-9' height={36} width={36} />
+								<FaXTwitter className='text-black h-6 w-6 md:h-9 md:w-9' />
 							</a>
 							<a
-								className='text-xl font-bold text-white mb-4 rounded-full p-2 bg-white border border-black border-r-3 border-b-3'
+								className='text-xl font-bold text-white mb-2 md:mb-4 rounded-full p-2 bg-white border border-black border-r-2 md:border-r-3 border-b-2 md:border-b-3'
 								href=''
+								aria-label='Pill Link'
 							>
-								<Pill className='text-black h-9 w-9' height={36} width={36} />
+								<Pill className='text-black h-6 w-6 md:h-9 md:w-9' />
 							</a>
 						</div>
 						<a
-							className='bg-[#264b7c] text-white border-4 border-black p-4 w-max font-bold text-2xl rotate-2 hover:rotate-0 transition-transform'
+							className='bg-[#264b7c] text-white border-3 md:border-4 border-black p-3 md:p-4 w-max font-bold text-xl md:text-2xl rotate-2 hover:rotate-0 transition-transform'
 							href='https://x.com/i/communities/1958130076949619185'
 							target='_blank'
 						>
@@ -137,14 +149,14 @@ export default function Home() {
 				<AudioPlayer audioSrc='/audio/poke-theme.mp3' />
 			</motion.div>
 			<motion.footer
-				className='w-full border-t py-3 bg-slate-900 text-white'
+				className='w-full border-t py-2 md:py-3 bg-slate-900 text-white'
 				variants={slideUpVariants}
 			>
 				<InfiniteTextCarousel
 					text='BUY $POKECULT'
-					className='text-sm font-medium'
+					className='text-xs sm:text-sm font-medium'
 					speed={40}
-					gap={80}
+					gap={50}
 				/>
 			</motion.footer>
 		</motion.div>
