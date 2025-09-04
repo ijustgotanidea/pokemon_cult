@@ -121,33 +121,3 @@
 		@apply bg-background text-foreground;
 	}
 }
-
-.pokemon-font {
-	font-family: var(--font-pokemon), sans-serif;
-}
-
-/* Pokemon font size utilities */
-.pokemon-text-sm {
-	font-family: var(--font-pokemon), sans-serif;
-	font-size: 0.875rem;
-}
-
-.pokemon-text-md {
-	font-family: var(--font-pokemon), sans-serif;
-	font-size: 1rem;
-}
-
-.pokemon-text-lg {
-	font-family: var(--font-pokemon), sans-serif;
-	font-size: 1.125rem;
-}
-
-.pokemon-text-xl {
-	font-family: var(--font-pokemon), sans-serif;
-	font-size: 1.25rem;
-}
-
-.pokemon-text-2xl {
-	font-family: var(--font-pokemon), sans-serif;
-	font-size: 1.5rem;
-}
