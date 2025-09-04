@@ -101,7 +101,7 @@ export default function Home() {
 					height={100}
 					className='absolute -right-10 rotate-2 -top-4 w-[100px] md:w-[150px]'
 				/>
-				<p className='text-sm md:text-base font-bold text-white'>CA: Coming soon!</p>
+				<p className='text-sm md:text-base font-bold text-white'>CA: BxQ2PtNKiAzq56YHQnfug4arJhpjcBJoHjUHBa7Cpump</p>
 			</motion.header>
 			<motion.main className='w-full flex-1' variants={itemVariants}>
 				<div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4 sm:px-6 md:px-12 lg:px-24'>
@@ -136,7 +136,7 @@ export default function Home() {
 							</a>
 							<a
 								className='text-xl font-bold text-white mb-2 md:mb-4 rounded-full p-2 bg-white border border-black border-r-2 md:border-r-3 border-b-2 md:border-b-3'
-								href=''
+								href='https://pump.fun/coin/BxQ2PtNKiAzq56YHQnfug4arJhpjcBJoHjUHBa7Cpump'
 								aria-label='Pill Link'
 							>
 								<Pill className='text-black h-6 w-6 md:h-9 md:w-9' />
@@ -144,7 +144,7 @@ export default function Home() {
 						</div>
 						<a
 							className='bg-[#264b7c] text-white border-3 md:border-4 border-black p-3 md:p-4 w-max font-bold text-xl md:text-2xl rotate-2 hover:rotate-0 transition-transform'
-							href='https://x.com/i/communities/1958130076949619185'
+							href='https://pump.fun/coin/BxQ2PtNKiAzq56YHQnfug4arJhpjcBJoHjUHBa7Cpump'
 							target='_blank'
 						>
 							Buy $POKECULT!
