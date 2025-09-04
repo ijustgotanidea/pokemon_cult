@@ -85,7 +85,7 @@ export default function Home() {
 			initial='hidden'
 			animate='visible'
 		>
-			<motion.header className='text-center p-4 md:p-8 relative' variants={itemVariants}>
+			<motion.header className='text-center p-3 md:p-8 relative' variants={itemVariants}>
 				<Image
 					src='/pokecult-logo.png'
 					alt='$POKECULT'
@@ -94,14 +94,14 @@ export default function Home() {
 					className='w-full max-w-[300px] md:max-w-[500px] lg:max-w-[800px] mx-auto'
 					priority
 				/>
-				<Image 
+				<Image
 					src='/poke-cult.png'
 					alt='Pikachu cult'
-					width={150}
-					height={150}
-					className='absolute -right-15 rotate-2 -top-5'
+					width={100}
+					height={100}
+					className='absolute -right-10 rotate-2 -top-4 w-[100px] md:w-[150px]'
 				/>
-				<p className='font-bold text-white'>CA: Coming soon!</p>
+				<p className='text-sm md:text-base font-bold text-white'>CA: Coming soon!</p>
 			</motion.header>
 			<motion.main className='w-full flex-1' variants={itemVariants}>
 				<div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4 sm:px-6 md:px-12 lg:px-24'>
