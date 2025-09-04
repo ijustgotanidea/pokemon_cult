@@ -19,8 +19,8 @@ const pokeFont = localFont({
 });
 
 export const metadata: Metadata = {
-	title: 'Buy $POKECULT - Battle & Trade',
-	description: 'By @caiooncrypto',
+	title: 'Buy $POKECULT',
+	description: 'Become a member of the Pokémon Cult',
 	viewport: 'width=device-width, initial-scale=1',
 };
 
